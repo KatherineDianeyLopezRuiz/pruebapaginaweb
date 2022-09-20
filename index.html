@@ -1,0 +1,304 @@
+<!--Katherin Dianey Lopez Ruiz
+5AMP
+17 Septiembre 2022-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+    //funcion del boton enviar
+    function mostrar_fecha()
+		{
+			var f=document.getElementById("fecha");
+			f.innerHTML= new Date();
+		}
+    function revisar()
+      	{
+	        //se declara la variable del text field a la cual se le introducira el valor que se coloca en este
+	        var info1=document.getElementById("info1").value;
+	        if (info1=="seis"  || "Seis") 
+	        {
+	            document.getElementById("pre1").innerHTML="Correcto";
+	            document.getElementById("pre1").style.color="green";
+	        }
+	        else
+	        {
+	        	document.getElementById("pre1").innerHTML="Incorrecto";
+	            document.getElementById("pre1").style.color="red";
+	        }
+	        if(respu1.checked==false && respu2.checked==true && respu3.checked==false)
+	        {
+	            document.getElementById("pre2").innerHTML="Correcto";
+		        document.getElementById("pre2").style.color="green";
+	        }
+	        else
+	        {
+	        	document.getElementById("pre2").innerHTML="Incorrecto";
+		        document.getElementById("pre2").style.color="red";
+	        }
+	        var info3=document.getElementById("info3").value;
+	        if(info3=="baqueta" || "Baqueta")
+	        {
+	            document.getElementById("pre3").innerHTML="Correcto";
+	            document.getElementById("pre3").style.color="green";
+	        }
+	        else
+	        { 
+	        	document.getElementById("pre3").innerHTML="Incorrecto";
+	            document.getElementById("pre3").style.color="red";
+	        }
+	        if(resp1.checked==false && resp2.checked==false&& resp3.checked==true)
+	        {
+	            document.getElementById("pre4").innerHTML="Correcto";
+	            document.getElementById("pre4").style.color="green";
+	        }
+	        else
+	        {
+	        	document.getElementById("pre4").innerHTML="Incorrecto";
+	            document.getElementById("pre4").style.color="red";
+	        }
+	        var rest1=document.getElementById("piezas");
+	        if(rest1.value==3)
+	        {
+	            document.getElementById("pre5").innerHTML="Correcto";
+		        document.getElementById("pre5").style.color="green";
+	        }
+	        else
+	        {
+	        	document.getElementById("pre5").innerHTML="Incorrecto";
+		        document.getElementById("pre5").style.color="red";
+	        }
+        }
+        function reset()
+        {
+        	document.getElementById("formu").reset();
+        }
+        	
+  </script>
+</head>
+<body>
+	<style type="text/css">
+		body
+		{
+			background-color: #C5C6C8; background-image: url(instrumentos.jpg); background-repeat: no-repeat;
+		}
+		table
+ 		{
+	     	height: 50px; width: 1330px; background-color:black; font-size:15px; border: 2px; border: groove; border-radius: 20px; text-align: center;
+	    }
+		h1
+		{
+			text-align: center; color:black; font-size:30px;  font-family:"Bell MT";
+		}
+		h2
+		{
+			text-align: center; color:black; font-size:30px;  font-family:"Bell MT";
+		}
+		h3
+		{
+			text-align: center; color:black; font-size:20px;  font-family:"Bell MT";
+		}
+		th
+		{
+			color:white;
+		}
+		td
+		{
+			padding: 20px; color:white;
+		}
+		 input[type="button"]
+ 		{
+ 			width:100px; height:20px; background-color:black; color:white; font-size:15px; font-family:"Arial"; border-color:black; border:none; 
+ 		}
+ 		a
+ 		{
+ 			color:white; text-align: center;
+ 		}
+	</style>
+	<a name="regresar"></a>
+	<center><div id="fecha"></div></center>
+	<script type="text/javascript">
+		mostrar_fecha();
+		setInterval(mostrar_fecha, 1000);
+	</script>
+	<table>
+			<tr>
+				<td><a href="#test">Test</a></td>
+				<td><a href="#cursos">Cursos</a></td>
+				<td><a href="#redes">Redes</a></td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>¡CURSOS DE M&Uacute;SICA!</h1>
+		<h2>&hearts;DIVI&Eacute;RTETE APRENDIENDO&hearts;</h2>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<a name="test"></a><h3>¡¡Realice este test para ver cuanto sabe a cerca de los instrumentos musicales!!</h3>
+		<form id="formu">
+		<label>1.-¿Cu&aacute;ntas cuerdas tiene una guitarra española?</label>
+		<br>
+		<input type="text" id="info1" placeholder="Por favor, ingresa aqui" />
+	    <div id="pre1"></div>
+	    <br>
+	    <br>
+		<label>2.-¿Con qu&eacute; objeto se toca el viol&iacute;n?</label>
+	    <br>
+		<input type="radio" name="op1" id="respu1">Baqueta
+		<br>
+		<input type="radio" name="op2" id="respu2">Arco
+		<br>
+		<input type="radio" name="op3n" id="respu3">P&uacute;a
+		<div id="pre2"></div>
+		<br>
+		<br>
+		<label>3.-¿Con que objeto se toca la bater&iacute;a?</label>
+		<br>
+		<input type="text" id="info3" placeholder="Por favor, ingresa aqui" />
+		<div id="pre3"></div>
+		<br>
+		<br>
+		<label>4.-¿Cu&aacute;l de estas es una parte de la guitarra el&eacute;ctrica?</label>
+		<br>
+		<input type="checkbox" name="opcion1" id="resp1">Arco
+		<br>
+		<input type="checkbox" name="opcion2" id="resp2">Camaza
+		<br>
+		<input type="checkbox" name="opcion3" id="resp3">Clavijero
+		<div id="pre4"></div>
+		<br>
+		<br>
+		<label>5.-¿Cu&aacute;ntas piezas tiene un piano moderno?</label>
+        <br>
+		<select id="piezas" name="piezas" required=>
+			<option value="0">0</option>
+			<option value="1">65</option>
+			<option value="2">58</option>
+			<option value="3">88</option>
+		</select>
+		<div id="pre5"></div>
+		<br>
+		<label>6.-¿Cu&aacute;ntas cuerdas tiene un ukelele?</label>
+        <br>
+		<input list="respuesta">
+		<input type="button" value="Borrar" onclick="reset()">
+		<input type="button" value="Revisar" onclick="revisar()">
+		</form>
+		<br>
+		<center><a style="color: black" href="#regresar">Regresar</a></center>
+		<hr>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<a name="cursos"></a><h1>Cursos</h1>
+		<table>
+			<tr>
+				<th></th>
+				<th>Direcci&oacute;n</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th>Centro Art&iacute;stico, Privada 20 #718, entre CTM y Tabasco</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th></th>
+				<th>&hearts;</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th>Nombre del curso</th>
+				<th>Objetivo del curso</th>
+				<th>Fecha</th>
+			</tr>
+			<tr>
+				<td><img src="guitarracustica.jpg" alt="guitarra acustica" width=300 height=150><br>Guitarra ac&uacute;stica</td>
+				<td style="width: 400px; text-align: justify;">Conocer e interpretar obras de diversas épocas y estilos, desarrollar hábitos de estudio valorando el rendimiento en función del tiempo empleado, relacionar los conocimientos adquiridos de lectura y escritura musicales con la práctica de la Guitarra Acústica.</td>
+				<td style="text-align: center;">Lunes y Mi&eacute;rcoles de 2:00pm a 3:00pm</td>
+			</tr>
+			<tr>
+				<td><img src="guitarraelectrica.jpg" alt="guitarra electrica" width=300 height=150><br>Guitarra el&eacute;ctrica</td>
+				<td style="width: 400px; text-align: justify;">Transmitir las Nociones Elementales para la ejecución de dicho instrumento a través de los Géneros Populares más reconocidos como Blues, Rock, Pop, Bossa Nova, Jazz entre otros, utilizando Técnicas, conceptos de ejecución y elementos esenciales de Lecto-escritura Musical,práctica individual y trabajo de Ensamble, entre algunas Asignaturas.</td>
+				<td style="text-align: center;">Martes y Jueves de 5:00pm a 6:00pm</td>
+			</tr>
+			<tr>
+				<td><img src="ukelele.jpg" alt="ukelele" width=300 height=150><br>Ukelele</td>
+				<td style="width: 400px; text-align: justify;">Conocer el ukelele, como su historia, tipos, partes y afinación, aprender a leer diagramas, tablaturas y partituras, Ponocer y practicar acordes principales, rasgueos y arpegios básicos, practicar conceptos específicos del lenguaje musical en un repertorio nivelado según dificultad, conocer propuestas didácticas, metodologías, recursos y herramientas para aplicar el ukelele de forma práctica, conocer recursos adecuados a los diferentes niveles y necesidades específicas de aprendizaje para facilitar el conocimiento de los conceptos básicos o complejos, ofrecer ideas, recursos y herramientas al docente para un correcto uso del ukelele en el aula.</td>
+				<td style="text-align: center;">Mi&eacute;rcoles, Jueves y Viernes de 1:00pm a 2:00pm</td>
+			</tr>
+			<tr>
+				<td><img src="violin.jpg" alt="violin" width=300 height=150><br>Viol&iacute;n</td>
+				<td style="width: 400px; text-align: justify;">Explorar todos los recursos que provee la música en una forma de enseñanza que prevalezca en el desempeño artístico-musical de cada alumno, con ejercicios que desarrollen la coordinación, fluidez, afinación e independencia.</td>
+				<td style="text-align: center;">Viernes y Jueves de 4:00pm a 5:00pm</td>
+			</tr>
+			<tr>
+				<td><img src="piano.jpg" alt="piano" width=300 height=150><br>Piano</td>
+				<td style="width: 400px; text-align: justify;">Mejora tu coordinación, aumenta tu capacidad auditiva, mejora tu capacidad lectora, tocar el piano mejora tu destreza con las matemáticas.</td>
+				<td style="text-align: center;">Lunes, Martes y Mi&eacute;rcoles de 3:00pm a 4:00pm</td>
+
+			</tr>
+			<tr>
+				<td><img src="bateria.jpg" alt="bateria" width=300 height=150><br>Bater&iacute;a</td>
+				<td style="width: 400px; text-align: justify;">Estimular la sensibilidad del alumno mediante actividades en las que descubra, explore y experimente sus posibilidades expresivas, de una manera lúdica, con ejercicios que desarrollen la coordinación, musicalidad, tiempo interno e independencia.</td>
+				<td style="text-align: center;">Martes y Mi&eacute; 12:00pm a 1:00pm</td>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+			</tr>
+		</table>	
+		<center><a style="color: black" href="#regresar">Regresar</a></center>
+
+		<h2>Visita nuestra p&aacute;gina!!!</h2>
+		<br>
+		<h3>&laquo;Siguenos en nuestras redes para mas contenido&raquo;</h3>
+		<h3>Entra aqu&iacute;&darr;</h3>
+		<!--se le agrega una imagen de la red social para indicar cual es-->
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" width=30 height=30>
+		<!--se coloca el link de la red social para que al hacer click en el nombre de la pagina te lleve a ella-->
+		<a href="https://instagram.com/kak.fashion_?igshid=YmMyMTA2M2Y=">kak.fashion_</a>
+		<hr>
+	</body>
+</html>
